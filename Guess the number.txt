@@ -1,0 +1,20 @@
+n=18
+number_of_guesses = 1
+print("------Guess the Number------")
+print("You only have 9 number of guesses !")
+while (number_of_guesses<=9):
+    guess_number = int(input("Guess the number :\n"))
+    if guess_number<18:
+        print("You entered a lesser number !!")
+    elif guess_number>18:
+        print("You entered a greater number !!")
+    else:
+        print(" Congrats !! You've won the game.")
+        print("You took",number_of_guesses,"number of guesses to finish the game")
+        break
+    print(9-number_of_guesses,"number of guesses left !")
+    number_of_guesses = number_of_guesses+1
+
+if(number_of_guesses>9):
+    print("Abay Chutiye ek number guess nahi hota tujh se !! Kia programmer bane ga re tu ")
+    print("The number you were trying to guess was 18")
